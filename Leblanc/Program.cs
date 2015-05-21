@@ -99,6 +99,7 @@ namespace Leblanc
                     .AddItem(
                         new MenuItem("ComboSetOption", "Combo").SetValue(
                             new StringList(new[] { "Auto", "Q-R Combo", "W-R Combo", "E-R Combo", }, 1)));
+                               combo.AddItem(new MenuItem("Combo_Switch", "Switch mode Key", true).SetValue(new KeyBind("T".ToCharArray()[0], KeyBindType.Press)));
                 Config.SubMenu("Combo")
                     .AddItem(
                         new MenuItem("ComboSetEHitCh", "E Hit").SetValue(
